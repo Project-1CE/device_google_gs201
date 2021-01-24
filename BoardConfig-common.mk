@@ -25,7 +25,7 @@ USES_DEVICE_GOOGLE_GS201 := true
 $(call soong_config_set,googleDeviceConfig,target_soc,gs201)
 
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a
+TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a76
 
