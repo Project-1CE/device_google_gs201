@@ -27,7 +27,7 @@ $(call soong_config_set,googleDeviceConfig,target_soc,gs201)
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_VARIANT := cortex-a55
+TARGET_CPU_VARIANT := cortex-a76
 
 # Force any prefer32 targets to be compiled as 64 bit.
 IGNORE_PREFER32_ON_DEVICE := true
@@ -37,8 +37,7 @@ TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
+TARGET_2ND_CPU_VARIANT := cortex-a76
 
 BOARD_KERNEL_CMDLINE += earlycon=exynos4210,0x10A00000 console=ttySAC0,115200 androidboot.console=ttySAC0 printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += cma_sysfs.experimental=Y
