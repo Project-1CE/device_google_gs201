@@ -67,4 +67,7 @@
     <!-- IWLAN-->
     <string name="config_qualified_networks_service_package">com.android.qns</string>
 
+    <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">false</bool>
+
 </resources>
