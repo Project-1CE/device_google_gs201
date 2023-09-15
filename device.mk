@@ -868,7 +868,7 @@ include device/google/gs-common/gps/brcm/device.mk
 endif
 
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 include device/google/gs-common/sensors/sensors.mk
 $(call soong_config_set,usf,target_soc,gs201)
