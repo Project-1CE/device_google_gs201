@@ -5,6 +5,19 @@
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+# Kernel
+BOARD_KERNEL_IMAGE_NAME := Image.lz4
+TARGET_KERNEL_CONFIG := gs201_defconfig
+TARGET_KERNEL_SOURCE := kernel/google/gs201
+TARGET_KERNEL_VERSION := 6.1
+
+BOARD_PREBUILT_DTBOIMAGE := $(PRODUCT_OUT)/prebuilt_dtbo.img
+$(BOARD_PREBUILT_DTBOIMAGE): $(PRODUCT_OUT)/kernel
+	$(hide) cp $(PRODUCT_OUT)/obj/KERNEL_OBJ/arch/arm64/boot/dts/google/dtbo.img $@
+
+KERNEL_NEW_GCC_SUPPORT := true
+TARGET_HAS_MODULES := false
+
 # Manifests
 DEVICE_MANIFEST_FILE += device/google/gs201/android.hardware.security.rkp-service.citadel.xml
 ifneq ($(BOARD_WITHOUT_RADIO),true)
