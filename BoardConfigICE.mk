@@ -18,8 +18,6 @@ $(BOARD_PREBUILT_DTBOIMAGE): $(PRODUCT_OUT)/kernel
 
 KERNEL_NEW_GCC_SUPPORT := true
 TARGET_HAS_MODULES := false
-$(shell mkdir -p $(PRODUCT_OUT)/vendor_kernel_ramdisk)
-$(shell touch $(PRODUCT_OUT)/vendor_kernel_ramdisk/empty)
 
 # Manifests
 DEVICE_MANIFEST_FILE += device/google/gs201/android.hardware.security.rkp-service.citadel.xml
