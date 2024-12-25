@@ -22,3 +22,7 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 # Linker config
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     device/google/gs201/linker.config.json
+
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringOverlay
